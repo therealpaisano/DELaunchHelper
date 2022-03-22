@@ -1,7 +1,12 @@
-﻿{
+{
     "default_version":  "",
     "RTSS_path":  "",
     "Livesplit_path":  "",
-    "AHK":  "".
-    "Steam_path": ""
+    "Steam_path":  "",
+    "AHK":  "",
+    "macro":  "",
+    "Livesplit":  "",
+    "RTSS":  "",
+    "version_switching":  "",
+    "profile_path":  ""
 }
