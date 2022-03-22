@@ -15,7 +15,7 @@ if (!$options.Steam_path) {
     $options.Steam_path = $FolderBrowser.SelectedPath
 }
 
-if (!$options.version_switching -eq "y") {
+if (!$options.version_switching) {
     $options.version_switching = Read-Host -Prompt "Will you be swapping versions using this script? (y/n) (you can change this in options.json later)"
 }
 if ($options.version_switching -eq "y"){
@@ -92,7 +92,7 @@ if (!$options.Macro) {
     $options.Macro = Read-Host -Prompt "Do you want to launch the Freescroll Emulation Macro with this script? (y/n) (you can change this in options.json later)"
 }
 
-if ($options.version_switching) {
+if ($options.version_switching -eq "y") {
 	$old_ver = Get-Content ($options.Steam_path+"\steamapps\common\DOOMEternal\version.txt")
 
 	Rename-Item -Path ($options.Steam_path+"\steamapps\common\DOOMEternal\") -NewName ("DOOMEternal" + $old_ver)
