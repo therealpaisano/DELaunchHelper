@@ -15,7 +15,7 @@ if (!$options.Steam_path) {
     $options.Steam_path = $FolderBrowser.SelectedPath
 }
 
-if (!$options.version_switching) {
+if (!$options.version_switching -eq "y") {
     $options.version_switching = Read-Host -Prompt "Will you be swapping versions using this script? (y/n) (you can change this in options.json later)"
 }
 if ($options.version_switching -eq "y"){
